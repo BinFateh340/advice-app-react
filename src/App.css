@@ -19,20 +19,20 @@
 .card {
         background-color: whitesmoke;
         width: 40%;
-        height: 20%;
+        min-height: 20%;
+        height: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         border-radius: 25px;
-        padding: 2%;
+        padding: 20px;
         box-shadow: 10px 10px;
 }
 
 .heading {
         display: flex;
         align-items: center;
-        height: 580px;
         font-family: "League Spartan", sans-serif;
 }
 
@@ -46,8 +46,8 @@
         align-items: center;
         cursor: pointer;
         text-transform: uppercase;
-        height: 200px;
-        width: 210px;
+        height: 40px;
+        max-width: 210px;
         opacity: 1;
         background-color: #ffffff;
         border: 1px solid rgba(22, 76, 167, 0.6);
@@ -109,6 +109,7 @@
 @media only screen and  (max-width: 600px) {
         .card {
             width: 80%;
-            height: 30%;
+            min-height: 30%;
+            /* height: fit-content; */
         }
 }
